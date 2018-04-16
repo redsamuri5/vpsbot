@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-#BOT Autocancel INVITE & AUTO BLOCKADD
-#แก้ไขดัดแปลงโดย [By. ☬ധู้さန້ণق↔ധഖาໄฟ☬]
+#ID LINE tont1. & AUTO BLOCKADD
+#แก้ไขดัดแปลงโดย [By.👹თัՁஆ่❍௦ิढेइะ👹]
 
-import LINEVIT
-from LINEVIT.lib.curve.ttypes import *
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
-cl = LINEVIT.LINE()
-cl.login(token=" 
+cl = LINETCR.LINE()
+cl.login(token="ErwbpM52MCiQ9Du8CC96.1AFih6g1nTT6QiDSa9xLrG.FTLopCLMpMixnm9KpeaUtzJlpsJnM7f6WdWooTiRckE=" 
 cl.loginResult()
 
 ki = kk = kc = cl 
