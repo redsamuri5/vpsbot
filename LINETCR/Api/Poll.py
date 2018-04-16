@@ -21,7 +21,7 @@ class Poll:
   #UA = "Line/1.4.17"
 #  LA = "IOSIPAD\x097.14.0\x09iPhone_OS\x0910.12.0"
   #LA = "CHROMEOS\t1.4.17\tChrome_OS\t1"
-  UA = "Line/8.1.1"
+  UA = "Line/10.10.2"
   LA = "DESKTOPMAC\t10.10.2-YOSEMITE-x64\tMAC 4.5.0"    
 
   rev = 0
