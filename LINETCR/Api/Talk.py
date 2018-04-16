@@ -20,7 +20,7 @@ class Talk:
   host = "gd2.line.naver.jp";
   port = 443;
 	
-  UA = "Line/8.1.1"
+  UA = "Line/10.10.2"
   LA = "DESKTOPMAC\t10.10.2-YOSEMITE-x64\tMAC 4.5.0"    
 
   #UA = "Line/1.4.17"
