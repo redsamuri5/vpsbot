@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import LINETCR
-#import wikipedia
+import wikipedia
 from LINETCR.lib.curve.ttypes import *
-#from ASUL.lib.curve.ttypes import *
 from datetime import datetime
-# https://kaijento.github.io/2017/05/19/web-scraping-youtube.com/
 from bs4 import BeautifulSoup
 from threading import Thread
 from googletrans import Translator
@@ -14,23 +12,22 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 
 cl =LINETCR.LINE()
-#cl.login(qr=True)
 cl.login(token='EqcoOsfMP64dMUNJ37d3.BBw3pzbW1+soEofidir4aW.x4tS5Gn7Zgvu6TAA0EBwNctkecyN+k2XYmDaaQdDb2Y')
 cl.loginResult()
 
-#ki = LINETCR.LINE()
-#ki.login(token='EqHcbM8BSq55e0TGJv3d.CjaQinvalP1FmHKChURWBq.u2K8AtO0FtfUUW19z8YCUSd6fIi6STxPO3KRZAG0CO8')
-#ki.loginResult()
+ki = LINETCR.LINE()
+ki.login(token='EqHcbM8BSq55e0TGJv3d.CjaQinvalP1FmHKChURWBq.u2K8AtO0FtfUUW19z8YCUSd6fIi6STxPO3KRZAG0CO8')
+ki.loginResult()
 
-#ki2 = LINETCR.LINE()
-#ki2.login(qr=True)
-#ki2.login(token='Eq8GV919FJNUMrNPSWc7.AT7NDdbl0H2GLxuGz4QxXW.55ZTTqTEznurl4KqO/emtDspWcZqZyP/dYp3Y0wLKWA')
-#ki2.loginResult()
+ki2 = LINETCR.LINE()
+ki2.login(qr=True)
+ki2.login(token='Eq8GV919FJNUMrNPSWc7.AT7NDdbl0H2GLxuGz4QxXW.55ZTTqTEznurl4KqO/emtDspWcZqZyP/dYp3Y0wLKWA')
+ki2.loginResult()
 
-#ki3 = LINETCR.LINE()
-#ki3.login(qr=True)
-#ki3.login(token='EqrZqWr13j43WIcnGcQe.zmCv8kW3miEalfHutIIt+G.Tz3P2Dq5yzpOk3AyoIPDCCya5W5+EaLqRfMZkyX7chE')
-#ki3.loginResult()
+ki3 = LINETCR.LINE()
+ki3.login(qr=True)
+ki3.login(token='EqrZqWr13j43WIcnGcQe.zmCv8kW3miEalfHutIIt+G.Tz3P2Dq5yzpOk3AyoIPDCCya5W5+EaLqRfMZkyX7chE')
+ki3.loginResult()
 
 #ki4 = LINETCR.LINE()
 #ki4.login(qr=True)
@@ -52,14 +49,14 @@ cl
 #cl.login(token='EoChmq5TXM73ZRg9P8ec.YLgVP2FFH7O3buLlL8m1xa.53z2MiS/devknmPfbJjsBhLEqtWnv6cUujv6wklIJsc')
 #cl.loginResult()
 
-print u"่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т"
+print u"RED SAMURI SELFBOT"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage =""" 
-   ╔════☬════♪•●☬●•♪════☬═══╗
-                           ่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т̶ℓ
-   ╚════☬════♪•●☬●•♪════☬═══╝
+   🌾RED BOT LINE THAILAND🌾
+     ─┅═✥👊ᵀᴴᴬᴵᴸᴬᴺᴰ👊✥═┅─ 
+🎎  💀[RED SAMURI SELFBOT]💀  🎎
          
 ||=====☬คำสั่งทั่วไป☬=====||
 ☬➣ [Me]➣คอนแทคฉัน
@@ -146,19 +143,21 @@ helpMessage ="""
 ☬➣ [Cancelprotect on/off]ยกเชินเปิด/ปิด		   
 ☬➣[Staff add/remove @]	   
 ||=======☬FOR ADMIN☬=======||
-     ▀██▀────██─██──██████
-     ─██──██────██──██
-     ─████──────██──██████
-     ─██──██────██──██
-     ▄██▄───██──██──██████
+     🌾RED BOT LINE THAILAND🌾
+    ─┅═✥👊ᵀᴴᴬᴵᴸᴬᴺᴰ👊✥═┅─ 
+🎎  💀[RED SAMURI SELFBOT]💀  🎎
+
 ╔════☬════♪•●☬●•♪════☬═══╗
-        Http://line.me/ti/p/~getk3333
+ Http://line.me/ti/p/~samuri5
 ╚════☬════♪•●☬●•♪════☬═══╝
         
 ||=========================||
 """
 
-help2Message =""" ||==่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т̶ℓ==||
+help2Message =""" 
+   🌾RED BOT LINE THAILAND🌾
+    ─┅═✥👊ᵀᴴᴬᴵᴸᴬᴺᴰ👊✥═┅─ 
+🎎  💀[RED SAMURI SELFBOT]💀  🎎
 
 ☬คท  - ส่งคท.ตัวเอง(Me)
 ☬ไอดี  - ส่งMidตัวเอง
@@ -182,7 +181,7 @@ help2Message =""" ||==่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т̶ℓ==||
 ☬ลิ้ง  - เปิดและขอลิ้งกลุ่ม
 ☬Gname:  - เปลี่ยนชื่อกลุ่ม
 ☬ลบรัน  - ลบรันตัวเอง
-☬ลบรัน1 - ลบรันให้เพื่อน(ขอลิ้งให้ลอคอินก่อน)
+☬ลบรัน1 - ลบรันให้เพื่อน
 ☬ขอลิ้ง  - ขอลิ้งให้เพื่อนลอคอิน
 ☬.  - เชคสถานะลอคอิน
 ☬Sp  - เชคสปีด
@@ -193,67 +192,47 @@ help2Message =""" ||==่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т̶ℓ==||
 ☬Backup  - คิกเกอร์1กลับร่างเดิม
 ☬Spam on/off  - ส่งข้อความสแปม
 ||==========||
-✯★Creator By  👉่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т̶ℓ👈
+✯★Creator By  👉่RED SAMURI SELFBOT👈
 """
 
 helo=""
 
-KAC=[cl]#,ki,ki2,ki3,ki4,ki5]
+KAC=[cl,ki,ki2,ki3]#,ki4,ki5]
 mid = cl.getProfile().mid
-#kimid = ki.getProfile().mid
-#ki2mid = ki2.getProfile().mid
-#ki3mid = ki3.getProfile().mid
+kimid = ki.getProfile().mid
+ki2mid = ki2.getProfile().mid
+ki3mid = ki3.getProfile().mid
 #ki4mid = ki4.getProfile().mid
 #ki5mid = ki5.getProfile().mid
 bot1 = cl.getProfile().mid
-Bots = [mid]#,kimid,ki2mid,ki3mid,ki4mid,ki5mid]
-admsa = "u6db5b73d9070d7f48e78e1480c847803"
-admin = "u6db5b73d9070d7f48e78e1480c847803"
+Bots = [mid,kimid,ki2mid,ki3mid]#,ki4mid,ki5mid]
+admsa = "ub5abe828cd964292195c3c59d6322033"
+admin = "ub5abe828cd964292195c3c59d6322033"
 
 wait = {
     'contact':True,
     'detectMention':True,
     'autoJoin':False,
-    'autoCancel':{"on":False,"members":1},
+    'autoCancel':{"on":True,"members":10},
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':False,
-    'message':"""
-               [ AOTO  LIKE  ]
-                 [ SELF BOT ]
-
-     [By.☬่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т̶ℓ☬]
-   http://line.me/ti/p/~getk9999
-
-   ─██─███─███─██─██─██▄█
-   ─██─▀██▄██▀─▀█▄█▀─██▀█
-   ▄██▄▄█▀▀▀─────▀──▄██▄▄█
-
-         [By.☬่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т̶ℓ☬]
-   http://line.me/ti/p/~getk9999""",
+    'message':"""🌾(●´з`)♡🌹แอดมาทำไมคับ 🌸แอดมาจีบรึแอดมารัน🌹(´ε｀ )♡🌾""",
     "lang":"JP",
-    "comment":"Auto Like By ",
+    "comment":"""
+                  🌟
+                🚩🔱🚩
+           👍AutoLike by👍
+      🌾RED BOT LINE THAILAND🌾
+       ─┅═✥👊ᵀᴴᴬᴵᴸᴬᴺᴰ👊✥═┅─ 
+   🎎  💀[RED SAMURI SELFBOT]💀  🎎
+     http://line.me/ti/p/~samuri5""",
     "welmsg":"welcome to group",
-    "commentOn":False,
-    "comment1":"""
-               [ AOTO  LIKE  ]
-                 [ SELF BOT ]
-
-     [By.☬่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т̶ℓ☬]
-   http://line.me/ti/p/~getk9999
-
-   ▀██▀────██─██──██████
-   ─██──██────██──██
-   ─████──────██──██████
-   ─██──██────██──██
-   ▄██▄───██──██──██████
-         [By.☬่❂>ͣ▪т̶є̶α̶м̶в̶σ̶т̶ℓ☬]
-   http://line.me/ti/p/~getk9999""",
-    "comment2":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~getk9999",
-    "comment3":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~getk9999.",    
-    "comment4":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~getk9999.",    
-    "commentOn":True,
-    "wc":False, 
+    "comment1":"",
+    "comment2":"",
+    "comment3":"",    
+    "comment4":"",    
+    "commentOn":True, 
     "likeOn":True,
     "wc":False,
     "commentBlack":{},
@@ -265,10 +244,9 @@ wait = {
     "clock":False,
     "Sambutan":False,
     "tag":False,
-    "pesan":"☺อย่าแท้กบ่อยน่ะเดะจับเยสเรย☺",
-    "cNames":"",
+    "pesan":"☺แท้กบ่อยเดะจับเยสนะ☺",
+    "cNames":"─═ই꫞ஆัঐ௫နιшิa७꫞ ‮࿐)",,
     "blacklist":{},
-    "group":False,
     "wblacklist":False,
     "dblacklist":False,
     "protect":False,
@@ -284,7 +262,7 @@ wait2 = {
     'readPoint':{},
     'readMember':{},
     'setTime':{},
-    "ricoinvite":{},
+    'ricoinvite':{},
     'ROM':{},
     }
 
@@ -306,11 +284,11 @@ mybackup.displayName = contact.displayName
 mybackup.statusMessage = contact.statusMessage
 mybackup.pictureStatus = contact.pictureStatus
 
-#contact = ki.getProfile()
-#backup = ki.getProfile()
-#backup.displayName = contact.displayName
-#backup.statusMessage = contact.statusMessage
-#backup.pictureStatus = contact.pictureStatus
+contact = ki.getProfile()
+backup = ki.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
 user1 = mid
 user2 = ""
@@ -364,11 +342,11 @@ def bot(op):
         if op.type == 24:
             if wait["leaveRoom"] == True:
                 cl.leaveRoom(op.param1)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "ub8e146e024acdc277a3ba6a7d7a30ca9":
+                if msg.from_ == "ub5abe828cd964292195c3c59d6322033":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -385,109 +363,133 @@ def bot(op):
                 ki.like(url[25:58], url[66:], likeType=1001)
                 ki2.like(url[25:58], url[66:], likeType=1001)
                 ki3.like(url[25:58], url[66:], likeType=1001)
-                ki4.like(url[25:58], url[66:], likeType=1001)
-                ki5.like(url[25:58], url[66:], likeType=1001)
+                #ki4.like(url[25:58], url[66:], likeType=1001)
+                #ki5.like(url[25:58], url[66:], likeType=1001)
                 cl.comment(url[25:58], url[66:], wait["comment1"])
                 ki.comment(url[25:58], url[66:], wait["comment1"])
                 ki2.comment(url[25:58], url[66:], wait["comment1"])
                 ki3.comment(url[25:58], url[66:], wait["comment1"])
-                ki4.comment(url[25:58], url[66:], wait["comment1"])
-                ki5.comment(url[25:58], url[66:], wait["comment1"])
+                #ki4.comment(url[25:58], url[66:], wait["comment1"])
+                #ki5.comment(url[25:58], url[66:], wait["comment1"])
                             
+            if op.type == 26:
+            msg = op.message
             if "MENTION" in msg.contentMetadata.keys() != None:
-                 if wait['detectMention'] == True:
-                     contact = cl.getContact(msg.from_)
-                     image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                     cName = contact.displayName
-                     msg.text1 = "@"+cName+" "
-                  #   balas = ["แท็คทำไมครับ(..)รึสนใจจะเอาเราไปใช้\nสนใจติดต่อได้ที่\nLine ID : Kmzaaa\nhttp://line.me/ti/p/eOuAF1hhYx\nటู้ສန้ণს☣နัဂສ૭ບĆĿŰß☣"]
-                     balas = ["มีเชลบอทลบรัน พร้อมคิกเก้อ💟\nลบบินกลุ่ม ออโต้ไลค์ และอื่นๆอีกมากมาย\n🔒กันสมาชิกเปิดลิ้งห้อง\n🔒กันรัน\n🔒กันสมาชิกเชิญคนนอกเข้า\n🔒กันสมาชิกเปลี่ยนชื่อกลุ่ม\n🔒กันคนนอกเข้ามาลบคนในกลุ่ม\n👉และมีเชิพเวอร์vpn(เน็ต) มีทั้งรายเดือนและรายวัน👈\n👉สนใจติดต่อลิ้งด้านล่างเรยครับ👈\nโอนเข้าบัญชี💲เทานั้น\nสนใจ แอดมาคุยได้\nhttp://line.me/ti/p/~getk3333\nhttp://line.me/ti/p/~getk9999"]
-                     ret_ = msg.text1 + random.choice(balas)
-                     name = re.findall(r'@(\w+)', msg.text)
+                 if wait['Tagvirus'] == True:
                      mention = ast.literal_eval(msg.contentMetadata["MENTION"])
+                     mentionees = mention["MENTIONEES"]
+                     for mention in mentionees:
+                           if mention["M"] in mid:
+                                  msg.contentType = 13
+                                  msg.contentMetadata = {'mid': "JANDA'"}
+                                  cl.sendMessage(msg)
+                                  break
+            
+            if 'MENTION' in msg.contentMetadata.keys() != None:
+                 if wait["kickMention"] == True:
+                     contact = cl.getContact(msg.from_)
+                     cName = contact.displayName
+                     balas = ["Aku Bilang Jangan Ngetag Lagi " + cName + "\nAku Kick Kamu! Sorry, Byee!!!"]
+                     ret_ = random.choice(balas)                     
+                     name = re.findall(r'@(\w+)', msg.text)
+                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                      mentionees = mention['MENTIONEES']
                      for mention in mentionees:
                            if mention['M'] in Bots:
                                   cl.sendText(msg.to,ret_)
+                                  cl.kickoutFromGroup(msg.to,[msg.from_])
+                                  break
+                              
+            if 'MENTION' in msg.contentMetadata.keys() != None:
+                 if wait["detectMention"] == True:          
+                    contact = cl.getContact(msg.from_)
+                    cName = contact.displayName
+                    balas = ["ว่าไงคับน้องสาว? " + cName + "มีอะไรให้ผมรับใช้คับ😂😂",cName + " แทคทำไมมิทราบ? มีอิโรยก๊ะว่ามา",cName + " แทคบ่อยๆเดะจับทำเมียนะ -..-","หยุดแทคสักพัก" + cName + " แล้วมาพบรักที่หลังแชท😝😝","😎😎😎\nคับ มีไรคับ " + cName, "ยังไม่ว่าง เดี๋ยวมาตอบนะ " + cName, "ไม่อยู่ ไปทำธุระ " + cName + "มีไรทิ้งแชทไว้ที่แชท.สตนะ?", "อ่ะ เอาอีกแระ " + cName + "แทคตมอย??????????????????","ป๊าาาด " + cName + " คุณนายคับ จะแทคทำไมคับ!"]
+                    balas1 = "รูปภาพคนแทค. . ."
+                    ret_ = random.choice(balas)
+                    image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                    name = re.findall(r'@(\w+)', msg.text)
+                    mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                    mentionees = mention['MENTIONEES']
+                    for mention in mentionees:
+                           if mention['M'] in Bots:
+                                  cl.sendText(msg.to,ret_)
+                                  cl.sendText(msg.to,balas1)
                                   cl.sendImageWithURL(msg.to,image)
-                                  break            
-                    
-            #if "MENTION" in msg.contentMetadata.keys() != None:
-            #     if wait['kickMention'] == True:
-            #         contact = cl.getContact(msg.from_)
-            #         cName = contact.displayName
-            #         balas = ["Dont Tag Me!! Im Busy, ",cName + " Ngapain Ngetag?, ",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja, ", "-_-, ","Putra lagi off, ", cName + " Kenapa Tag saya?, ","SPAM PC aja, " + cName, "Jangan Suka Tag gua, " + cName, "Kamu siapa, " + cName + "?", "Ada Perlu apa, " + cName + "?","Tag doang tidak perlu., "]
-             #3        ret_ = "[Auto Respond] " + random.choice(balas)
-             #        name = re.findall(r'@(\w+)', msg.text)
-             #        summon(op.param1,[op.param2])
-             #3        mention = ast.literal_eval(msg.contentMetadata["MENTION"])
-              #       mentionees = mention['MENTIONEES']
-              #       for mention in mentionees:
-              #             if mention['M'] in Bots:
-              #                    cl.sendText(msg.to,ret_)
-                                  
-              #                    cl.kickoutFromGroup(msg.to,[msg.from_])
-              #                    break
+                                  msg.contentType = 7   
+                                  msg.text = None
+                                  msg.contentMetadata = {
+                                                       "STKID": "23701825",
+                                                       "STKPKGID": "1740802",
+                                                       "STKVER": "1" }
+                                  cl.sendMessage(msg)
+                                  jawaban1 = ("มีอะไรครับ แทคแล้วไม่พูดจับรันนะ ห้าห้าห้าห้า")
+                                  tts = gTTS(text=jawaban1, lang='th')
+                                  tts.save('tts.mp3')
+                                  cl.sendAudio(msg.to,'tts.mp3')                               
+                                  break
 
         if op.type == 17:
-          if wait["Sambutan"] == True:
-            if op.param2 in admin:
-                return
-            ginfo = cl.getGroup(op.param1)
-            contact = cl.getContact(op.param2)
-            image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            c = Message(to=op.param1, from_=None, text=None, contentType=13)
-            c.contentMetadata={'mid':op.param2}
-            cl.sendMessage(c)
-            print "MEMBER JOIN TO GROUP"
-
-
+            if wait["Sambutan"] == True:
+                if op.param2 in mid:
+                    return
+                ginfo = cl.getGroup(op.param1)
+                contact = cl.getContact(op.param2)
+                image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                cl.sendText(op.param1,"สวัสดี " + cl.getContact(op.param2).displayName + "\nยินดีต้อนรับเข้าสู่กลุ่ม ☞ " + str(ginfo.name) + " ☜" + "\nเข้ามาแล้วอย่าลืมดูที่โน๊ตกลุ่มด้วยนะ\nอย่าลืมปิดเสียงแจ้งเตือนด้วยล่ะ ^_^")
+                c = Message(to=op.param1, from_=None, text=None, contentType=13)
+                c.contentMetadata={'mid':op.param2}
+                cl.sendMessage(c)  
+                cl.sendImageWithURL(op.param1,image)
+                d = Message(to=op.param1, from_=None, text=None, contentType=7)
+                d.contentMetadata={
+                                        "STKID": "23701829",
+                                         "STKPKGID": "1740802",
+                                         "STKVER": "1" }                
+                cl.sendMessage(d)          
+                print "MEMBER JOIN TO GROUP"
             
-            if msg.toType == 1:
-                if wait["leaveRoom"] == True:
-                    cl.leaveRoom(msg.to)
-# ----------------- NOTIFED MEMBER JOIN GROUP
-        if op.type == 17:
-          if wait["group"] == True:
-            if op.param2 in admin:
-                return
-            ginfo = cl.getGroup(op.param1)
-            contact = cl.getContact(op.param2)
-            image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            cl.sendText(op.param1, " ยินดีต้อนรับ. เข้ามาแล้วก็อย่าลืมลงแชร์กันน่ะครับ @ " + cl.getContact(op.param2).displayName + " สู่กลุ่ม " + "👉" + str(ginfo.name) + "👈""\nหรือสนใจลงบอทป้องกัน , บอทแท็ก ติดต่อได้ที่Line ID : Kmzaaa\nhttp://line.me/ti/p/eOuAF1hhYx")
-            cl.sendImageWithURL(op.param1,image)
-            print "ada orang masuk grup"
-            if msg.contentType == 16:
-                url = msg.contentMetadata["postEndUrl"]
-                cl.like(url[25:58], url[66:], likeType=1001)
-# ----------------- NOTIFED MEMBER OUT GROUP
+        if op.type == 19:
+            if wait["Sambutan"] == True:
+                if op.param2 in mid:
+                    return
+                ginfo = cl.getGroup(op.param1)
+                contact = cl.getContact(op.param2)
+                image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "คืออยังมันโหดแท้ว่ะ(|||ﾟдﾟ)")
+                c = Message(to=op.param1, from_=None, text=None, contentType=13)
+                c.contentMetadata={'mid':op.param2}
+                cl.sendMessage(c)  
+                cl.sendImageWithURL(op.param1,image)
+                d = Message(to=op.param1, from_=None, text=None, contentType=7)
+                d.contentMetadata={
+                                        "STKID": "22832861",
+                                         "STKPKGID": "1705396",
+                                         "STKVER": "1" }                
+                cl.sendMessage(d)
+                print "MEMBER KICK OUT FORM GROUP"
+
         if op.type == 15:
-          if wait['group'] == True:
-            if op.param2 in bot1:
-                return
-            cl.sendText(op.param1,"good Bye @  " + cl.getContact(op.param2).displayName + "รีบไปไหนอ่ะ. ไม่เป็นไรไว้เจอกันใหม่น่ะจ๊ะ")
-            print ("MEMBER HAS LEFT THE GROUP")
-# ----------------- NOTIFED MEMBER JOIN GROUP
-        if op.type == 17:
-          if wait['group'] == True:
-            if op.param2 in bot1:
-                return
-            ginfo = cl.getGroup(op.param1)
-            cl.sendText(op.param1, "😊ยินดีต้อนรับ 😊 @ " + cl.getContact(op.param2).displayName + " สู่กลุ่ม " + "👉" + str(ginfo.name) + "👈""\n\n😃เข้ามาแร้วอย่าดื้อน่ะหนู😄")
-            print "MEMBER HAS JOIN THE GROUP"
-            if msg.contentType == 16:
-                url = msg.contentMetadata["postEndUrl"]
-                cl.like(url[25:58], url[66:], likeType=1001)
-# ----------------- NOTIFED MEMBER JOIN GROUP
-#        if op.type == 17:
- #         if wait["group"] == True:
-  #          if op.param2 in admin:
-   #             return
-    #        ginfo = cl.getGroup(op.param1)
-     #       contact = cl.getContact(op.param2)
-      #      image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-       #     cl.sendImageWithURL(op.param1,image)
-        #    print "ada orang masuk grup"
+            if wait["Sambutan"] == True:
+                if op.param2 in mid:
+                    return
+                ginfo = cl.getGroup(op.param1)
+                contact = cl.getContact(op.param2)
+                image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                cl.sendText(op.param1,"Goodbye.. " + cl.getContact(op.param2).displayName +  "\nแล้วเจอกันใหม่นะ. . . (p′︵‵。) 🤗")
+                c = Message(to=op.param1, from_=None, text=None, contentType=13)
+                c.contentMetadata={'mid':op.param2}
+                cl.sendMessage(c)  
+                cl.sendImageWithURL(op.param1,image)
+                d = Message(to=op.param1, from_=None, text=None, contentType=7)
+                d.contentMetadata={
+                                        "STKID": "23701835",
+                                        "STKPKGID": "1740802",
+                                        "STKVER": "1" }
+                cl.sendAudio(msg.to,'tts.mp3')                
+                cl.sendMessage(d)                
+                print "MEMBER HAS LEFT THE GROUP"
+		
         if op.type == 25:
             msg = op.message
             if msg.contentType == 13:
@@ -590,7 +592,7 @@ def bot(op):
                 if wait["timeline"] == True:
                     msg.contentType = 0
                     if wait["lang"] == "JP":
-                        msg.text = "💟ลิ้งโพสอยู่ด้านล้างน้ะจ้ะ💟\n" + msg.contentMetadata["postEndUrl"]
+                        msg.text = "💟ลิ้งโพส💟\n" + msg.contentMetadata["postEndUrl"]
                     else:
                         msg.text = "URLâ†’\n" + msg.contentMetadata["postEndUrl"]
                     cl.sendText(msg.to,msg.text)
@@ -603,11 +605,11 @@ def bot(op):
                     cl.sendText(msg.to,helpMessage)
  
  #--------------------------------------------------                   
-#                elif msg.text.lower()  == 'help2':
- #               if wait["lang"] == "JP":
+            elif msg.text.lower()  == 'help2':
+                if wait["lang"] == "JP":
                     cl.sendText(msg.to,help2Message)
-  #              else:
-   #                 cl.sendText(msg.to,help2Message)
+                else:
+                    cl.sendText(msg.to,help2Message)
 
 #----------------------------------------------
             elif "Me @" in msg.text:
@@ -766,26 +768,6 @@ def bot(op):
                 ki3.sendMessage(msg)
                 ki4.sendMessage(msg)
                 ki5.sendMessage(msg)
-
-#            if "MENTION" in msg.contentMetadata.keys() != None:
- #                if wait['detectMention'] == True:
-  #                   contact = kr.getContact(msg.from_)
-   #                  image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-    #                 cName = contact.displayName
-     #                msg.text1 = "@"+cName+" "
-      #               balas = ["💓อย่าแท้กสิเตง💓"]
-       #              ret_ = msg.text1 + random.choice(balas)
-        #             name = re.findall(r'@(\w+)', msg.text)
-         #            mention = ast.literal_eval(msg.contentMetadata["MENTION"])
-          #           mentionees = mention['MENTIONEES']
-           #          for mention in mentionees:
-            #               if mention['M'] in Bots:
-             #                     kr.sendText(msg.to,ret_)
-              #                    kr.sendImageWithURL(msg.to,image)
-               #                   break 
-                              
-            
-
 
             elif msg.text in ["Cancel","cancel","ยกเชิญ","ยก"]:
               if msg.from_ in admin:
@@ -1695,7 +1677,7 @@ def bot(op):
                     cl.sendText(msg.to,mc)
                     print "[Command]Stafflist executed"								
 #-----------------------------------------------------------
-            elif msg.text in ["Group creator","Gc","Gcreator","gcreator"]:
+            elif msg.text in ["แอด","Gc","Gcreator","gcreator"]:
                 ginfo = cl.getGroup(msg.to)
                 gCreator = ginfo.creator.mid
                 msg.contentType = 13
@@ -1704,7 +1686,90 @@ def bot(op):
                 cl.sendText(msg.to,"""╔══════════════
 💥ผู้สร้างกลุ่ม Creator 💥Group""")
 #staff-----------------------------------------------------------
-            elif "Getname" in msg.text:
+            elif msg.text.lower() == 'ไอดี':
+                cl.sendText(msg.to,mid)
+            elif "โพส: " in msg.text:
+                tl_text = msg.text.replace("โพส: ","")
+                cl.sendText(msg.to,"line://home/post?userMid="+mid+"&postId="+cl.new_post(tl_text)["result"]["post"]["postInfo"]["postId"])
+            elif "เปลี่ยนชื่อ: " in msg.text:
+                string = msg.text.replace("เปลี่ยนชื่อ: ","")
+                if len(string.decode('utf-8')) <= 10000000000:
+                    profile = cl.getProfile()
+                    profile.displayName = string
+                    cl.updateProfile(profile)
+                    cl.sendText(msg.to,"เปลี่ยนชื่อของคุณแล้วดังนี้👇 " + "\n" + string + "")
+            elif "เปลี่ยนตัส: " in msg.text:
+                string = msg.text.replace("เปลี่ยนตัส: ","")
+                if len(string.decode('utf-8')) <= 10000000000:
+                    profile = cl.getProfile()
+                    profile.statusMessage = string
+                    cl.updateProfile(profile)
+                    cl.sendText(msg.to,"เปลี่ยนตัสของคุณแล้วดังนี้ " + string + "")
+            elif msg.text in ["ชื่อ"]:
+                    h = cl.getContact(mid)
+                    cl.sendText(msg.to,"===[DisplayName]===\n" + h.displayName)
+            elif msg.text in ["ตัส"]:
+                    h = cl.getContact(mid)
+                    cl.sendText(msg.to,"===[StatusMessage]===\n" + h.statusMessage)
+            elif msg.text in ["รูปโปร"]:
+                    h = cl.getContact(mid)
+                    cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+            elif msg.text in ["วีดีโอโปร"]:
+                    h = cl.getContact(mid)
+                    cl.sendVideoWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+            elif msg.text in ["ลิ้งรูปโปร"]:
+                    h = cl.getContact(mid)
+                    cl.sendText(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+            elif msg.text in ["รูปปก"]:
+                    h = cl.getContact(mid)
+                    cu = cl.channel.getCover(mid)          
+                    path = str(cu)
+                    cl.sendImageWithURL(msg.to, path)
+            elif msg.text in ["ลิ้งรูปปก"]:
+                    h = cl.getContact(mid)
+                    cu = cl.channel.getCover(mid)          
+                    path = str(cu)
+                    cl.sendText(msg.to, path)
+#======================================================================#
+            elif "เปิดสแกน" in msg.text:
+                try:
+                    del cctv['point'][msg.to]
+                    del cctv['sidermem'][msg.to]
+                    del cctv['cyduk'][msg.to]
+                except:
+                    pass
+                cctv['point'][msg.to] = msg.id
+                cctv['sidermem'][msg.to] = ""
+                cctv['cyduk'][msg.to]=True
+                wait["Sider"] = True
+                cl.sendText(msg.to,"เปิดระบบสแกนคนอ่านอัตโนมัติ")
+                
+            elif "ปิดสแกน" in msg.text:
+                if msg.to in cctv['point']:
+                    cctv['cyduk'][msg.to]=False
+                    wait["Sider"] = False
+                    cl.sendText(msg.to, "ปิดระบบสแกนคนอ่านอัตโนมัติแล้ว")
+                else:
+                    cl.sendText(msg.to, "โปรดใช้คำสั่งเปิดแสกนก่อนจะปิด")
+#============================================================================#
+            elif "idline: " in msg.text:
+                msgg = msg.text.replace('idline: ','')
+                conn = cl.findContactsByUserid(msgg)
+                if True:
+                    msg.contentType = 13
+                    msg.contentMetadata = {'mid': conn.mid}
+                    cl.sendText(msg.to,"http://line.me/ti/p/~" + msgg)
+                    cl.sendMessage(msg)
+            elif "ไอดี @" in msg.text:
+                _name = msg.text.replace("ไอดี @","")
+                _nametarget = _name.rstrip(' ')
+                gs = cl.getGroup(msg.to)
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        cl.sendText(msg.to, g.mid)
+                    else:
+                        pass
+            elif "ชื่อ" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
                 contact = cl.getContact(key1)
@@ -1715,7 +1780,7 @@ def bot(op):
                     cl.sendText(msg.to, "===[DisplayName]===\n" + contact.displayName)
 
 
-            elif "Getprofile" in msg.text:
+            elif "รูปโปร" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
                 contact = cl.getContact(key1)
@@ -1732,7 +1797,7 @@ def bot(op):
                     pass
 
 
-            elif "Getcontact" in msg.text:
+            elif "คท" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]                
                 mmid = cl.getContact(key1)
@@ -1740,7 +1805,7 @@ def bot(op):
                 msg.contentMetadata = {"mid": key1}
                 cl.sendMessage(msg)
 
-            elif "Getinfo" in msg.text:
+            elif "ข้อมูล" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
                 contact = cl.getContact(key1)
@@ -1751,7 +1816,7 @@ def bot(op):
                     cl.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\n" + str(cu))
 
 
-            elif "Getbio" in msg.text:
+            elif "ตัส" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
                 contact = cl.getContact(key1)
@@ -1792,9 +1857,9 @@ def bot(op):
 
 
 #-------------------------------- PP BY TAG ---------------------------------
-            elif "Lo @" in msg.text:
+            elif "ร)ปก @" in msg.text:
                 if msg.toType == 2:
-                    cover = msg.text.replace("Cover @","")
+                    cover = msg.text.replace("รูปปก @","")
                     _nametarget = cover.rstrip('  ')
                     gs = cl.getGroup(msg.to)
                     targets = []
@@ -1863,15 +1928,20 @@ def bot(op):
 
             elif msg.text in ["Rejectall"]:
                 gid = cl.getGroupIdsInvited()
+		gid = ki.getGroupIdsInvited()
+		gid = ki2.getGroupIdsInvited()
+		gid = ki3.getGroupIdsInvited()
                 for i in gid:
                     cl.rejectGroupInvitation(i)
+		    ki.rejectGroupInvitation(i)
+	            ki2.rejectGroupInvitation(i)
+		    ki3.rejectGroupInvitation(i)
                 if wait["lang"] == "JP":
-                    cl.sendText(msg.to,"Completion。")
-                    ki.sendText(msg.to,"Completion。")
-                    ki2.sendText(msg.to,"Completion。")
-                    ki3.sendText(msg.to,"Completion。")
-                    ki4.sendText(msg.to,"Completion。")
-                    ki5.sendText(msg.to,"💟ทำการลบห้องรันหมดแล้ว💟")
+                    cl.sendText(msg.to,"💟ทำการลบห้องรันหมดแล้ว💟")
+                    ki.sendText(msg.to,"💟ทำการลบห้องรันหมดแล้ว💟")
+                    ki2.sendText(msg.to,"💟ทำการลบห้องรันหมดแล้ว💟")
+                    ki3.sendText(msg.to,"💟ทำการลบห้องรันหมดแล้ว💟")
+                    #ki4.sendText(msg.to,"💟ทำการลบห้องรันหมดแล้ว💟")
                 else:
                     cl.sendText(msg.to,"key is wrong。")
    #----------------------------------------------------------------
@@ -1904,19 +1974,358 @@ def bot(op):
                     ki.sendText(msg.to," " + string + " ")
                     ki2.sendText(msg.to," " + string + " ")
                     ki3.sendText(msg.to," " + string + " ")
-                    ki4.sendText(msg.to," " + string + " ")
-                    ki5.sendText(msg.to," " + string + " ")
+                    #ki4.sendText(msg.to," " + string + " ")
+                    #ki5.sendText(msg.to," " + string + " ")
                     ki.sendText(msg.to," " + string + " ")
                     ki2.sendText(msg.to," " + string + " ")
                     ki3.sendText(msg.to," " + string + " ")
-                    ki4.sendText(msg.to," " + string + " ")
-                    ki5.sendText(msg.to," " + string + " ")
+                    #ki4.sendText(msg.to," " + string + " ")
+                    #ki5.sendText(msg.to," " + string + " ")
                     ki.sendText(msg.to," " + string + " ")
                     ki2.sendText(msg.to," " + string + " ")
                     ki3.sendText(msg.to," " + string + " ")
-                    ki4.sendText(msg.to," " + string + " ")
-                    ki5.sendText(msg.to," " + string + " ")
+                    #ki4.sendText(msg.to," " + string + " ")
+                    #ki5.sendText(msg.to," " + string + " ")
 #-----------------------------------------------
+            elif "อู้-id " in msg.text:
+                isi = msg.text.replace("อู้-id ","")
+                translator = Translator()
+                hasil = translator.translate(isi, dest='id')
+                A = hasil.text
+                A = A.encode('utf-8')
+                cl.sendText(msg.to, A)
+            elif "อู้-en " in msg.text:
+                isi = msg.text.replace("อู้-en ","")
+                translator = Translator()
+                hasil = translator.translate(isi, dest='en')
+                A = hasil.text
+                A = A.encode('utf-8')
+                cl.sendText(msg.to, A)
+            elif "อู้-ar" in msg.text:
+                isi = msg.text.replace("อู้-ar ","")
+                translator = Translator()
+                hasil = translator.translate(isi, dest='ar')
+                A = hasil.text
+                A = A.encode('utf-8')
+                cl.sendText(msg.to, A)
+            elif "อู้-jp" in msg.text:
+                isi = msg.text.replace("อู้-jp ","")
+                translator = Translator()
+                hasil = translator.translate(isi, dest='ja')
+                A = hasil.text
+                A = A.encode('utf-8')
+                cl.sendText(msg.to, A)
+            elif "อู้-ko" in msg.text:
+                isi = msg.text.replace("อู้-ko ","")
+                translator = Translator()
+                hasil = translator.translate(isi, dest='ko')
+                A = hasil.text
+                A = A.encode('utf-8')
+                cl.sendText(msg.to, A)
+            
+            elif "Th@en" in msg.text:
+                bahasa_awal = 'th'
+                bahasa_tujuan = 'en'
+                kata = msg.text.replace("Th@en ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM TH🍁\n" + "" + kata + "\n🍁TO ENGLISH🍁\n" + "" + result + "\n🍁SUKSES🍁")
+            elif "En@th" in msg.text:
+                bahasa_awal = 'en'
+                bahasa_tujuan = 'th'
+                kata = msg.text.replace("En@th ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM EN🍁\n" + "" + kata + "\n🍁TO TH🍁\n" + "" + result + "\n🍁SUKSES🍁")
+            elif "Th@jp" in msg.text:
+                bahasa_awal = 'th'
+                bahasa_tujuan = 'ja'
+                kata = msg.text.replace("Th@jp ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM TH🍁\n" + "" + kata + "\n🍁TO JP🍁\n" + "" + result + "\n🍁SUKSES🍁")
+            elif "Jp@th" in msg.text:
+                bahasa_awal = 'ja'
+                bahasa_tujuan = 'th'
+                kata = msg.text.replace("Jp@th ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM JP🍁\n" + "" + kata + "\n🍁TO TH🍁\n" + "" + result + "\n🍁SUKSES🍁")
+            elif "Id@th" in msg.text:
+                bahasa_awal = 'id'
+                bahasa_tujuan = 'th'
+                kata = msg.text.replace("Id@th ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM ID🍁\n" + "" + kata + "\n🍁TO TH🍁\n" + "" + result + "\n🍁SUKSES🍁")
+            elif "Th@id" in msg.text:
+                bahasa_awal = 'th'
+                bahasa_tujuan = 'id'
+                kata = msg.text.replace("Th@id ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM TH🍁\n" + "" + kata + "\n🍁TO ID🍁\n" + "" + result + "\n🍁SUKSES🍁")
+            elif "Th@ar" in msg.text:
+                bahasa_awal = 'th'
+                bahasa_tujuan = 'ar'
+                kata = msg.text.replace("Th@ar ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM TH🍁\n" + "" + kata + "\n🍁TO AR🍁\n" + "" + result + "\n🍁SUKSES🍁")
+            elif "Ar@th" in msg.text:
+                bahasa_awal = 'ar'
+                bahasa_tujuan = 'th'
+                kata = msg.text.replace("Ar@th ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM AR🍁\n" + "" + kata + "\n🍁TO TH🍁\n" + "" + result + "\n🍁SUKSES🍁")
+            elif "Th@ko" in msg.text:
+                bahasa_awal = 'th'
+                bahasa_tujuan = 'ko'
+                kata = msg.text.replace("Th@ko ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM TH🍁\n" + "" + kata + "\n🍁TO KO🍁\n" + "" + result + "\n🍁SUKSES🍁")
+            elif "Ko@th" in msg.text:
+                bahasa_awal = 'ko'
+                bahasa_tujuan = 'th'
+                kata = msg.text.replace("Ko@th ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"🍁FROM KO🍁\n" + "" + kata + "\n🍁TO TH🍁\n" + "" + result + "\n🍁SUKSES🍁")
+                
+            elif msg.text.lower() == 'welcome':
+                ginfo = cl.getGroup(msg.to)
+                cl.sendText(msg.to,"🙏สวัสดีคับคนมาใหม่ 🙏" + "\n🌾ยินดีต้อนรับเข้าสู่กลุ่ม 🌾" + "\n👉" + str(ginfo.name) + "👈" + "\nมาใหม่แก้ผ้าด้วยนะ😂😂")
+                cl.sendText(msg.to,"By: •─✯RED★SAMURI★SELFBOT✯─•")
+                jawaban1 = ("ยินดีที่ได้รู้จักนะครับ " + "ผมชื่อเรด นะ")
+                tts = gTTS(text=jawaban1, lang='th')
+                tts.save('tts.mp3')
+                cl.sendAudio(msg.to,'tts.mp3')
+                
+            elif msg.text.lower() == 'แนะนำตัว':
+                ginfo = cl.getGroup(msg.to)
+                cl.sendText(msg.to,"🙏สวัสดีคับทุกคน 🙏" + "\n🌾ยินดีที่ได้เข้ามาในกลุ่ม 🌾" + "\n👉" + str(ginfo.name) +"👈")
+                cl.sendText(msg.to," สวัสดีแอดด้วยนะ"  +  "\nมาใหม่ต้องแก้ผ้าด้วยรึเปล่า 😆😆" + "\n\nBy: •─✯RED★SAMURI★SELFBOT✯─•")
+                jawaban1 = ("ผมชื่อเรดนะ" + "ยินดีที่ได้รู้จักกับทุกคนครับ")
+                tts = gTTS(text=jawaban1, lang='th')
+                tts.save('tts.mp3')
+                cl.sendAudio(msg.to,'tts.mp3')
+            
+            elif "Say-id " in msg.text:
+                say = msg.text.replace("Say-id ","")
+                lang = 'id'
+                tts = gTTS(text=say, lang=lang)
+                tts.save("hasil.mp3")
+                cl.sendAudio(msg.to,"hasil.mp3")
+                
+            elif "Say-en " in msg.text:
+                say = msg.text.replace("Say-en ","")
+                lang = 'en'
+                tts = gTTS(text=say, lang=lang)
+                tts.save("hasil.mp3")
+                cl.sendAudio(msg.to,"hasil.mp3")
+                
+            elif "Say-jp " in msg.text:
+                say = msg.text.replace("Say-jp ","")
+                lang = 'ja'
+                tts = gTTS(text=say, lang=lang)
+                tts.save("hasil.mp3")
+                cl.sendAudio(msg.to,"hasil.mp3")
+                
+            elif "Say-ar " in msg.text:
+                say = msg.text.replace("Say-ar ","")
+                lang = 'ar'
+                tts = gTTS(text=say, lang=lang)
+                tts.save("hasil.mp3")
+                cl.sendAudio(msg.to,"hasil.mp3")
+                
+            elif "Say-ko " in msg.text:
+                say = msg.text.replace("Say-ko ","")
+                lang = 'ko'
+                tts = gTTS(text=say, lang=lang)
+                tts.save("hasil.mp3")
+                cl.sendAudio(msg.to,"hasil.mp3")
+                
+            elif "Say-Th " in msg.text:
+                say = msg.text.replace("Say-Th ","")
+                lang = 'Th'
+                tts = gTTS(text=say, lang=lang)
+                tts.save("hasil.mp3")
+                cl.sendAudio(msg.to,"hasil.mp3")
+                  
+            elif "แซว" in msg.text:
+                  tanya = msg.text.replace("แซว","")
+                  jawab = ("สอ บอ มอ ยอ หอ","ว่าไงน้องสาว","ใครโสดขอมือหน่อย","ตับ ตับตับ ตับตับ")
+                  jawaban = random.choice(jawab)
+                  tts = gTTS(text=jawaban, lang='th')
+                  tts.save('tts.mp3')
+                  cl.sendAudio(msg.to,'tts.mp3')                     
+            elif "github " in msg.text:
+                    a = msg.text.replace("github ","")
+                    b = urllib.quote(a)
+                    cl.sendText(msg.to,"เริ่มต้นค้นหา ...")
+                    cl.sendText(msg.to, "Title: " + a + "\nLink: https://github.com/search?q=" +b)
+                    cl.sendText(msg.to, "☝กดลิ้งเข้าไปหาเองเด้อ🔬👌🔭")
+            elif "เพลสโต " in msg.text:
+                    tob = msg.text.replace("เพลสโต ","")
+                    cl.sendText(msg.to,"กำลังค้นหาชื่อแอพ...")
+                    cl.sendText(msg.to,"Title : "+tob+"\nSource : Google Play\nLinknya : https://play.google.com/store/search?q=" + tob)
+                    cl.sendText(msg.to,"☝กดลิ้งเข้าไปโหลดได้เลยนะ ^ - ^")
+            elif "twitter " in msg.text:
+                    a = msg.text.replace("twitter ","")
+                    b = urllib.quote(a)
+                    cl.sendText(msg.to,"เริ่มต้นทำการค้นหา ...")
+                    cl.sendText(msg.to, "https://www.twitter.com/search?q=" + b)
+                    cl.sendText(msg.to,"ทำการค้นหาสำเร็จ เชิญเข้าไปส่องโลด😆😆") 
+            elif "smule " in msg.text:
+                    a = msg.text.replace("smule ","")
+                    b = urllib.quote(a)
+                    cl.sendText(msg.to,"กำลังเริ่มต้นค้นหา ...")
+                    cl.sendText(msg.to, "Nama: "+b+"\nId smule: http://smule.com/search?q=" +b)
+            elif "ไอจี " in msg.text:
+                     a = msg.text.replace("ไอจี ","")
+                     b = urllib.quote(a)
+                     cl.sendText(msg.to,"กำลังเริ่มต้นค้นหา ...")                       
+                     cl.sendText(msg.to,  "https://www.instagram.com/"+b+"?hl=th")
+                     cl.sendText(msg.to,"ทำการค้นหาสำเร็จ เชิญเข้าไปส่องโลด😆😆")
+            elif "เฟสบุค" in msg.text:
+                    a = msg.text.replace("เฟสบุค","")
+                    b = urllib.quote(a)
+                    cl.sendText(msg.to,"กำลังเริ่มต้นค้นหา ...")
+                    cl.sendText(msg.to, "https://www.facebook.com" + b)
+                    cl.sendText(msg.to," ทำการค้นหาสำเร็จ ") 
+            elif "ส่องเฟส " in msg.text:
+                    a = msg.text.replace("ส่องเฟส ","")
+                    b = urllib.quote(a)
+                    cl.sendText(msg.to,"กำลังเริ่มต้นค้นหา ...")
+                    cl.sendText(msg.to, "https://www.facebook.com/search/top/?q=" + b)
+                    cl.sendText(msg.to,"ทำการค้นหาสำเร็จ เชิญเข้าไปส่องโลด😆😆")
+            elif "กูเกิ้ล " in msg.text:
+                    a = msg.text.replace("กูเกิ้ล ","")
+                    b = urllib.quote(a)
+                    cl.sendText(msg.to,"โปรดรอสักครู่...")
+                    cl.sendText(msg.to, "https://www.google.co.th/search?q=" + b)
+                    cl.sendText(msg.to,"ทำการค้นหาสำเร็จ↖(^ω^)↗")
+            elif "ยูทูป " in msg.text:
+                    a = msg.text.replace("ยูทูป ","")
+                    b = urllib.quote(a)
+                    cl.sendText(msg.to,"โปรดรอสักครู่...")
+                    cl.sendText(msg.to, "https://www.youtube.com/results?search_query=" + b)
+                    cl.sendText(msg.to,"ทำการค้นหาสำเร็จ↖(^ω^)↗")                
+            elif 'wikipedia ' in msg.text:
+                try:
+                    wiki = msg.text.replace("wikipedia ","")
+                    wikipedia.set_lang("th")
+                    pesan="Title ("
+                    pesan+=wikipedia.page(wiki).title
+                    pesan+=")\n\n"
+                    pesan+=wikipedia.summary(wiki, sentences=3)
+                    pesan+="\n"
+                    pesan+=wikipedia.page(wiki).url
+                    cl.sendText(msg.to, pesan)
+                except:
+                        try:
+                            pesan="ข้อความยาวเกินไปโปรดกดที่ลิ้งเพื่อดูข้อมูล\n"
+                            pesan+=wikipedia.page(wiki).url
+                            cl.sendText(msg.to, pesan)
+                        except Exception as e:
+                            cl.sendText(msg.to, str(e))
+                            
+            #elif "video " in msg.text:
+		#    a = msg.text.replace("video ","")
+                #    b = urllib.quote(a)
+                 #   cl.sendText(msg.to,"โปรดรอสักครู่...")
+                #    cl.sendText(msg.to, "{ Xvideos search page }\n\nTitle: "+b+"\nSource : https://porngangs.com/?tag=" +b)
+            
+
+            elif "mp4 " in msg.text:
+                        a = msg.text.replace("mp4 ", "").strip()
+                        query = urllib.quote(a)
+                        url = "https://www.youtube.com/results?search_query=mp4" + query
+                        response = urllib2.urlopen(url)
+                        html = response.read()
+                        soup = BeautifulSoup(html, "html.parser")
+                        results = soup.find(attrs={'class':'yt-uix-tile-link'})
+                        cl.sendText(msg.to,'https://www.youtube.com' + results['href'])
+                        cl.sendVideoWithUrl(msg.to, url)
+
+            elif 'ขอเพลง ' in msg.text:
+                try:
+                    textToSearch = (msg.text).replace('ขอเพลง ', "").strip()
+                    query = urllib.quote(textToSearch)
+                    url = "https://www.youtube.com/results?search_query=" + query
+                    response = urllib2.urlopen(url)
+                    html = response.read()
+                    soup = BeautifulSoup(html, "html.parser")
+                    results = soup.find(attrs={'class':'yt-uix-tile-link'})
+                    cl.sendText(msg.to,'https://www.youtube.com' + results['href'])
+                except:
+                    cl.sendText(msg.to,"Could not find it")
+            
+            elif 'วีดีโอ ' in msg.text:
+                try:
+                    textToSearch = (msg.text).replace('วีดีโอ ', "").strip()
+                    query = urllib.quote(textToSearch)
+                    url = "https://www.youtube.com/results?search_query=หนัง" + query
+                    response = urllib2.urlopen(url)
+                    html = response.read()
+                    soup = BeautifulSoup(html, "html.parser")
+                    results = soup.find(attrs={'class':'yt-uix-tile-link'})
+                    cl.sendText(msg.to,'https://www.youtube.com' + results['href'])
+                except:
+                    cl.sendText(msg.to,"Could not find it"
+
             elif "vdo:" in msg.text.lower():
                 if msg.toType == 2:
                    query = msg.text.split(":")
@@ -1942,13 +2351,6 @@ def bot(op):
                     cl.sendText(msg.to,'https://www.youtube.com' + results['href'])
                 except:
                     cl.sendText(msg.to,"Could not find it")
-#==================================================
-            elif msg.text in ["ทีมงาน","ทีมทดลองบอท"]:
-                msg.contentType = 13
-                cl.sendText(msg.to, "[SELFBOT PHET HACK BOT]\n\n[☢Ŧ€₳M≈ನန้ণএ≈฿❂Ŧ☢]\n[By.ทีมงานทีมทดลองบอท]")
-                cl.sendText(msg.to, "ผู้จัดการทีมงาน:kielovebot")
-                msg.contentMetadata = {'mid': 'uca51afa767df87ba3705494b97c3355c'}
-                cl.sendMessage(msg)
 #===================================================== 
             elif 'Chah' in msg.text:
               if msg.from_ in admin:
@@ -1959,87 +2361,7 @@ def bot(op):
 #-----------------------------------------------
 #==================================================
 #=====================================================               
-#=================================================================================
- 
-            elif "Tr-id " in msg.text:
-                isi = msg.text.replace("Tr-id ","")
-                translator = Translator()
-                hasil = translator.translate(isi, dest='id')
-                A = hasil.text
-                A = A.encode('utf-8')
-                cl.sendText(msg.to, A)
-
-            elif "Tr-en " in msg.text:
-                isi = msg.text.replace("Tr-en ","")
-                translator = Translator()
-                hasil = translator.translate(isi, dest='en')
-                A = hasil.text
-                A = A.encode('utf-8')
-                cl.sendText(msg.to, A)
-                
-            elif "Tr-th " in msg.text:
-                isi = msg.text.replace("Tr-th ","")
-                translator = Translator()
-                hasil = translator.translate(isi, dest='th')
-                A = hasil.text
-                A = A.encode('utf-8')
-                cl.sendText(msg.to, A)                
-
-            
-            elif "Id@en" in msg.text:
-                bahasa_awal = 'id'
-                bahasa_tujuan = 'en'
-                kata = msg.text.replace("Id@en ","")
-                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
-                agent = {'User-Agent':'Mozilla/5.0'}
-                cari_hasil = 'class="t0">'
-                request = urllib2.Request(url, headers=agent)
-                page = urllib2.urlopen(request).read()
-                result = page[page.find(cari_hasil)+len(cari_hasil):]
-                result = result.split("<")[0]
-                cl.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Inggris----\n" + "" + result)
-
-
-            elif "En@id" in msg.text:
-                bahasa_awal = 'en'
-                bahasa_tujuan = 'id'
-                kata = msg.text.replace("En@id ","")
-                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
-                agent = {'User-Agent':'Mozilla/5.0'}
-                cari_hasil = 'class="t0">'
-                request = urllib2.Request(url, headers=agent)
-                page = urllib2.urlopen(request).read()
-                result = page[page.find(cari_hasil)+len(cari_hasil):]
-                result = result.split("<")[0]
-                cl.sendText(msg.to,"----Dari Inggris----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)
-                
-            
-            elif "Id@th" in msg.text:
-                bahasa_awal = 'id'
-                bahasa_tujuan = 'th'
-                kata = msg.text.replace("Id@en ","")
-                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
-                agent = {'User-Agent':'Mozilla/5.0'}
-                cari_hasil = 'class="t0">'
-                request = urllib2.Request(url, headers=agent)
-                page = urllib2.urlopen(request).read()
-                result = page[page.find(cari_hasil)+len(cari_hasil):]
-                result = result.split("<")[0]
-                cl.sendText(msg.to,"----Dari Indonesia----\n" + "" + kata + "\n\n----Ke Thailand----\n" + "" + result)
-                
-            
-            elif "Th@id" in msg.text:
-                bahasa_awal = 'th'
-                bahasa_tujuan = 'id'
-                kata = msg.text.replace("Id@en ","")
-                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
-                agent = {'User-Agent':'Mozilla/5.0'}
-                cari_hasil = 'class="t0">'
-                request = urllib2.Request(url, headers=agent)
-                page = urllib2.urlopen(request).read()
-                result = page[page.find(cari_hasil)+len(cari_hasil):]
-                result = result.split("<")[0]
-                cl.sendText(msg.to,"----Dari Thailand----\n" + "" + kata + "\n\n----Ke Indonesia----\n" + "" + result)                
+#================================================================================= 
  
             elif msg.text in ["Friendlist"]:    
                 contactlist = cl.getAllContactIds()
@@ -2172,13 +2494,13 @@ def bot(op):
 #----------------------------------------------------
             elif msg.text in ["Aslogin","ขอลิ้ง"]:
                     if LINETCRLogged == False:
-                        ki.login(qr=True)
-                        ki.loginResult()
+                        ki4.login(qr=True)
+                        ki4.loginResult()
                         user2 = ki.getProfile().mid
                         LINETCRLogged = True
-                        cl.sendText(msg.to,"ล็อคอินสำเร็จ Asul พร้อมใช้งานแล้ว")
+                        cl.sendText(msg.to,"ล็อคอินสำเร็จ Ki4 พร้อมใช้งานแล้ว")
                     else:
-                        cl.sendText(msg.to,"Asul ได้ทำการล็อคอินไปแล้ว")
+                        cl.sendText(msg.to,"Ki4 ได้ทำการล็อคอินไปแล้ว")
             elif msg.text.lower() == ".":
                     gs = []
                     try:
@@ -2193,17 +2515,11 @@ def bot(op):
                         tlist = tlist+i.displayName+" "+i.mid+"\n\n"
                     if LINETCRLogged == True:
                         try:
-                            ki.sendText(user1,tlist)
+                            ki4.sendText(user1,tlist)
                         except:
-                            ki.new_post(tlist)
+                            ki4.new_post(tlist)
                     else:
-                        cl.sendText(msg.to,"Asul ยังไม่ได้ล็อคอิน")
-#-----------------------------------------------------------)
-            elif msg.text in ["Help2","Key","KEY"]:
-                if wait["lang"] == "JP":
-                    cl.sendText(msg.to,help2Message)
-                else:
-                    cl.sendText(msg.to,help2Message)
+                        cl.sendText(msg.to,"Ki4 ยังไม่ได้ล็อคอิน")
 #----------------------ADMIN COMMAND------------------------------#
 
             elif ("Kick " in msg.text):
@@ -2232,7 +2548,7 @@ def bot(op):
                         except:
                             cl.sendText(msg.to,"Error")
 
-            elif ("Kick5 " in msg.text):
+            elif ("Kick2 " in msg.text):
                 if msg.from_ in admin:
                     targets = []
                     key = eval(msg.contentMetadata["MENTION"])
@@ -2241,7 +2557,7 @@ def bot(op):
                         targets.append(x["M"])
                     for target in targets:
                         try:
-                            ki5.kickoutFromGroup(msg.to,[target])
+                            ki2.kickoutFromGroup(msg.to,[target])
                         except:
                             cl.sendText(msg.to,"Error")
 
@@ -2283,7 +2599,7 @@ def bot(op):
                              if not target in Bots:
                                 if not target in admin:
                                   try:
-                                      klist=[ki2,ki3,ki4,ki5]
+                                      klist=[ki2,ki3]
                                       kicker=random.choice(klist)
                                       kicker.kickoutFromGroup(msg.to,[target])
                                       print (msg.to,[g.mid])
@@ -2710,16 +3026,38 @@ def bot(op):
                     else:
                         cl.sendText(msg.to, "Out Of Range!")
 
-            elif msg.text in ["me","Me","คท","กู"]:
+            elif msg.text.lower() == 'me':
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': msg.from_}
+                msg.contentMetadata = {'mid': mid}
+                contact = cl.getContact(msg.contentMetadata["mid"])
+                cu = cl.channel.getCover(msg.contentMetadata["mid"])
+                path = str(cu)
+                image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                jawaban1 = ("ไม่ต้อง งงนะครับ มันเป็นความสามารถพิเศษ ห้าห้าห้าห้า อิ๊ขึอิ๊ขึ")
                 cl.sendMessage(msg)
-
-#            elif msg.text in ["me","Me"]:
- #               msg.contentType = 13
-  #              msg.contentMetadata = {'mid': msg.from_}
-   #             cl.sendMessage(msg)
-    #            print "SUKSES -- SEND CONTACT"    
+                cl.sendText(msg.to,contact.displayName)
+                cl.sendText(msg.to,contact.statusMessage)
+                cl.sendImageWithURL(msg.to,image)
+                cl.sendImageWithURL(msg.to,path)
+                tts = gTTS(text=jawaban1, lang='th')
+                tts.save('tts.mp3')
+                cl.sendAudio(msg.to,'tts.mp3')
+                msg.contentType = 7   
+                msg.text = None
+                msg.contentMetadata = {
+                                      "STKID": "33158329",
+                                      "STKPKGID": "10788",
+                                      "STKVER": "1" }
+                cl.sendMessage(msg)
+                cl.sendText(msg.to,"SELFBOT BY: " + "\n" + str(wait["comment1"]))
+            elif msg.text.lower() == 'กังนัม':
+                msg.contentType = 7   
+                msg.text = None
+                msg.contentMetadata={
+                                        "STKID": "33158332",
+                                         "STKPKGID": "10788",
+                                         "STKVER": "1" }                
+                cl.sendMessage(msg)
             
 
             elif cms(msg.text,["แอดมิน","Creator"]):
@@ -2728,11 +3066,6 @@ def bot(op):
                 cl.sendText(msg.to,"􀜁􀇔􏿿 My Creator 􀜁􀇔􏿿 ")
                 cl.sendMessage(msg)
                 cl.sendText(msg.to,"􀜁􀇔􏿿 Dont Kick out From group 􀜁􀇔􏿿 ")
-#                msg.contentType = 13
- #               msg.contentMetadata = {'mid': admin}
-  #              cl.sendText(msg.to,"􀜁􀇔􏿿 My Creator 􀜁􀇔􏿿 ")
-   #             cl.sendMessage(msg)
-    #            cl.sendText(msg.to,"􀜁􀇔􏿿 Dont Kick out From group 􀜁􀇔􏿿 ")
             
             elif "Inviteme: " in msg.text:
               if msg.from_ in admin:
@@ -2777,30 +3110,6 @@ def bot(op):
                     if group.invitee is None: md += "\nJumlah Member : " + str(len(group.members)) + " Orang" + "\nUndangan Yang Belum Diterima : 0 Orang"
                     else: md += "\nJumlah Member : " + str(len(group.members)) + " Orang" + "\nUndangan Yang Belum Diterima : " + str(len(group.invitee)) + " Orang"
                     cl.sendText(msg.to,md)
-            
-            elif msg.text == "ไวรัส01":
-	            cl.sendText(msg.to,"หยุดดดดดด....\nขอให้ทุกคนอยู่ในความสงบ\n\n 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1\n\nMakasih Sudah Dilihat :)\nJangan Dikick ampun mzz :v")
-            
-            elif ".music" in msg.text.lower():
-	            songname = msg.text.lower().replace(".music","")
-	            params = {"songname":" songname"}
-	            r = requests.get('https://ide.fdlrcn.com/workspace/yumi-apis/joox?' + urllib.urlencode(params))
-	            data = r.text
-	            data = json.loads(data)
-	            for song in data:
-		            cl.sendMessage(msg.to, song[4])
-            
-            elif ".Youtube " in msg.text:
-                 query = msg.text.replace(".Youtube ","")
-                 with requests.session() as s:
-                     s.headers['user-agent'] = 'Mozilla/5.0'
-                     url    = 'http://www.youtube.com/results'
-                     params = {'search_query': query}
-                     r    = s.get(url, params=params)
-                     soup = BeautifulSoup(r.content, 'html5lib')
-                     for a in soup.select('.yt-lockup-title > a[title]'):
-                         if '&List' not in a['href']:
-                               cl.sendText(msg.to,'http://www.youtube.com' + a['href'] + a['title'])
 
             elif "Block @" in msg.text:
                 if msg.toType == 2:
@@ -2901,12 +3210,12 @@ def bot(op):
                                 cl.sendText(msg.to,"Error!")
 
 #===============================================                
-            elif msg.text in ["Invite on","เชินเปิด"]:
+            elif msg.text in ["Invite on","เชิญ]:
               if msg.from_ in admin:
                 wait["ricoinvite"] = True
                 random.choice(KAC).sendText(msg.to,"🌟เปิดเชิญด้วยคอนแทค🌟")
 
-            elif msg.text in ["Invite off","ปิดเชิน"]:
+            elif msg.text in ["Invite off","ปิดเชินชญ"]:
               if msg.from_ in admin:
                 wait["ricoinvite"] = False
                 random.choice(KAC).sendText(msg.to,"🌟ปิดเชิญ🌟")
@@ -2916,9 +3225,6 @@ def bot(op):
                    key1 = key["MENTIONEES"][0]["M"]
                    mi = cl.getContact(key1)
                    cl.sendText(msg.to,"Mid:" +  key1)
-
-            elif msg.text in ["Mid","ไอดี"]:
-                cl.sendText(msg.to, msg.from_)
 
             elif msg.text in ["Link on","เปิดลิ้ง"]:
               if msg.from_ in admin:  
@@ -3010,7 +3316,7 @@ def bot(op):
                     L += "[���] %s \n" % (ki5.getGroup(i).name + " | [ " + str(len (ki5.getGroup(i).members)) + " ]")
                 ki5.sendText(msg.to, L + "\nTotal Group : [ " + str(len(gs)) +" ]")
                     
-            elif msg.text == "ลิ้ง":
+            elif msg.text == "ลิ้งหนังโป้":
                     ki.sendText(msg.to,"nekopoi.host")
                     ki.sendText(msg.to,"sexvideobokep.com")
                     ki.sendText(msg.to,"memek.com")
@@ -3055,8 +3361,8 @@ def bot(op):
                 ki.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 ki2.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 ki3.sendText(msg.to, "%sseconds" % (elapsed_time))    
-                ki4.sendText(msg.to, "%sseconds" % (elapsed_time))    
-                ki5.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                #ki4.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                #ki5.sendText(msg.to, "%sseconds" % (elapsed_time))    
 #-----------------------------------------------
             elif "Sp" in msg.text:
                 start = time.time()
@@ -3077,11 +3383,11 @@ def bot(op):
                 ki3.sendText(msg.to, text)
                 profile = ki4.getProfile()
                 text = profile.displayName
-                ki4.sendText(msg.to, text)
-                profile = ki4.getProfile()
-                text = profile.displayName
-                ki5.sendText(msg.to, text)
-                profile = ki5.getProfile()
+                #ki4.sendText(msg.to, text)
+                #profile = ki4.getProfile()
+                #text = profile.displayName
+                #ki5.sendText(msg.to, text)
+                #profile = ki5.getProfile()
 
 #------------------------------------------------------------------	
             elif "Steal home @" in msg.text:            
@@ -3215,11 +3521,11 @@ def bot(op):
 
 
 
-            elif msg.text in ["cb","���้างดำ"]:
+            elif msg.text in ["cb","ล้างดำ"]:
               if msg.from_ in admin:
                 wait["blacklist"] = {}
                 cl.sendText(msg.to,"clear")
-            elif msg.text in [" Ban","ดำ"]:
+            elif msg.text in ["Ban","ดำ"]:
               if msg.from_ in admin:
                 wait["wblacklist"] = True
                 cl.sendText(msg.to,"send contact to ban")
@@ -3229,7 +3535,7 @@ def bot(op):
                 wait["dblacklist"] = True
                 cl.sendText(msg.to,"send contact to ban")
             
-            elif msg.text in ["Banlist","เชคดำ"]:
+            elif msg.text in ["Banlist","เช็คดำ"]:
               if msg.from_ in admin:
                 if wait["blacklist"] == {}:
                     cl.sendText(msg.to,"Nothing 􀨁􀄻double thumbs up􏿿")
@@ -3268,8 +3574,8 @@ def bot(op):
                             ki.kickoutFromGroup(msg.to,[jj])
                             ki2.kickoutFromGroup(msg.to,[jj])
                             ki3.kickoutFromGroup(msg.to,[jj])
-                            ki4.kickoutFromGroup(msg.to,[jj])
-                            ki5.kickoutFromGroup(msg.to,[jj])
+                            #ki4.kickoutFromGroup(msg.to,[jj])
+                            #ki5.kickoutFromGroup(msg.to,[jj])
                             print (msg.to,[jj])
                         except:
                             pass
@@ -3295,7 +3601,7 @@ def bot(op):
                         for target in targets:
                           if not target in Bots:
                             try:
-                                klist=[cl]
+                                klist=[cl,ki,ki2,ki3]
                                 kicker=random.choice(klist)
                                 kicker.kickoutFromGroup(msg.to,[target])
                                 print (msg.to,[g.mid])
@@ -3315,8 +3621,8 @@ def bot(op):
                         ki.acceptGroupInvitationByTicket(msg.to,Ti)
                         ki2.acceptGroupInvitationByTicket(msg.to,Ti)
                         ki3.acceptGroupInvitationByTicket(msg.to,Ti)
-                        ki4.acceptGroupInvitationByTicket(msg.to,Ti)
-                        ki5.acceptGroupInvitationByTicket(msg.to,Ti)
+                        #ki4.acceptGroupInvitationByTicket(msg.to,Ti)
+                        #ki5.acceptGroupInvitationByTicket(msg.to,Ti)
                         G = cl.getGroup(msg.to)
                         G.preventJoinByTicket = True
                         cl.updateGroup(G)
@@ -3336,10 +3642,10 @@ def bot(op):
                         time.sleep(0.2)
                         ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
-                        ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
+                        #ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        #time.sleep(0.2)
+                        #ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        #time.sleep(0.2)
                         G = cl.getGroup(msg.to)
                         G.preventJoinByTicket = True
                         ki.updateGroup(G)
@@ -3357,8 +3663,8 @@ def bot(op):
                         ki.acceptGroupInvitationByTicket(msg.to,Ticket)
                         ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
                         ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        #ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        #ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = True
@@ -3866,7 +4172,10 @@ def bot(op):
                     pass
                 else:
                     cl.sendText(op.param1,str(wait["message"]))
-                    
+        if op.type == 5:
+            if wait["autoBlock"] == True:
+                cl.blockContact(op.param1)
+			      
 #------Open QR Kick start------#
         if op.type == 11:
             if wait["linkprotect"] == True:
@@ -3910,12 +4219,18 @@ def autolike():
              if posts["postInfo"]["liked"] is False:
                 if wait['likeOn'] == True:
                    cl.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
+	           ki.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
+		   ki2.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
+		   ki3.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
                    print "Like"
                    if wait["commentOn"] == True:
                       if posts["userInfo"]["writerMid"] in wait["commentBlack"]:
                          pass
                       else:
                           cl.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
+			  ki.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
+			  ki2.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
+			  ki3.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
         except:
             count += 1
             if(count == 50):
@@ -3932,7 +4247,7 @@ def likefriend():
       if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
         try:
           cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
-          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉ąµţ๏ℓɨЌ€ By C-A_Bot😊\n\n☆º°˚˚✰ tɛǟʍ ċʏɮɛʀ-ǟʀʍʏ ɮօt ✰º°˚˚☆（＾ω＾）\nąµţ๏ℓɨЌ€ by Kris ⭐👈 »»» http://line.me/ti/p/~krissthea «««")
+          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],wait["comment"])
           print "Like"
         except:
           pass
@@ -3947,7 +4262,7 @@ def likeme():
             if hasil['result']['posts'][zx]['userInfo']['mid'] in mid:
                 try:
                     cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"👉ąµţ๏ℓɨЌ€ By C-A_Bot😊\n\n☆º°˚˚✰ tɛǟʍ ċʏɮɛʀ-ǟʀʍʏ ɮօt ✰º°˚˚☆（＾ω＾）\nąµţ๏ℓɨЌ€ by Kris ⭐👈 »»» http://line.me/ti/p/~krissthea «««")
+                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],wait["comment"])
                     print "Like"
                 except:
                     pass
@@ -3983,7 +4298,7 @@ thread2.start()
 
 while True:
     try:
-        Ops = cl.fetchOps(cl.Poll.rev, 5)
+        Ops = cl.fetchOps(cl.Poll.rev, 50)
     except EOFError:
         raise Exception("It might be wrong revision\n" + str(cl.Poll.rev))
 
