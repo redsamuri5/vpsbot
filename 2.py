@@ -290,13 +290,13 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 mid = cl.getProfile().mid
-Bots = ["ueacedbe88bf6e2c5cf6188b3a4a26e18","ucf62500a2f053cf319ffb5e88272d879","ua8bfe243de42e0e2ca317b003800e53a","ub20058e31aa2d466a8b5eb752db42af6","uabaff27bb76196b07fe3ebb13019061a","uec596d705a30eafefb0482a80ceb75e8",mid,Amid1,Amid2,Amid3,Amid4,Amid5]
-self = ["ueacedbe88bf6e2c5cf6188b3a4a26e18","ucf62500a2f053cf319ffb5e88272d879","ua8bfe243de42e0e2ca317b003800e53a","ub20058e31aa2d466a8b5eb752db42af6","uabaff27bb76196b07fe3ebb13019061a","uec596d705a30eafefb0482a80ceb75e8",mid,Amid1,Amid2,Amid3,Amid4,Amid5]
-admin = "ueacedbe88bf6e2c5cf6188b3a4a26e18","ucf62500a2f053cf319ffb5e88272d879","ua8bfe243de42e0e2ca317b003800e53a","ub20058e31aa2d466a8b5eb752db42af6","uabaff27bb76196b07fe3ebb13019061a","uec596d705a30eafefb0482a80ceb75e8"
-admsa = "ueacedbe88bf6e2c5cf6188b3a4a26e18","ucf62500a2f053cf319ffb5e88272d879","ua8bfe243de42e0e2ca317b003800e53a","ub20058e31aa2d466a8b5eb752db42af6","uabaff27bb76196b07fe3ebb13019061a","uec596d705a30eafefb0482a80ceb75e8"
-owner = "ueacedbe88bf6e2c5cf6188b3a4a26e18","ucf62500a2f053cf319ffb5e88272d879","ua8bfe243de42e0e2ca317b003800e53a","ub20058e31aa2d466a8b5eb752db42af6","uabaff27bb76196b07fe3ebb13019061a","uec596d705a30eafefb0482a80ceb75e8"
-adminMID = "ueacedbe88bf6e2c5cf6188b3a4a26e18","ucf62500a2f053cf319ffb5e88272d879","ua8bfe243de42e0e2ca317b003800e53a","ub20058e31aa2d466a8b5eb752db42af6","uabaff27bb76196b07fe3ebb13019061a","uec596d705a30eafefb0482a80ceb75e8"
-Creator= "ueacedbe88bf6e2c5cf6188b3a4a26e18","ucf62500a2f053cf319ffb5e88272d879","ua8bfe243de42e0e2ca317b003800e53a","ub20058e31aa2d466a8b5eb752db42af6","uabaff27bb76196b07fe3ebb13019061a","uec596d705a30eafefb0482a80ceb75e8"
+Bots = ["ueacedbe88bf6e2c5cf6188b3a4a26e18",mid,Amid1,Amid2,Amid3,Amid4,Amid5]
+self = ["ueacedbe88bf6e2c5cf6188b3a4a26e18",mid,Amid1,Amid2,Amid3,Amid4,Amid5]
+admin = "ueacedbe88bf6e2c5cf6188b3a4a26e18"
+admsa = "ueacedbe88bf6e2c5cf6188b3a4a26e18"
+owner = "ueacedbe88bf6e2c5cf6188b3a4a26e18"
+adminMID = "ueacedbe88bf6e2c5cf6188b3a4a26e18"
+Creator= "ueacedbe88bf6e2c5cf6188b3a4a2cf6e18"
 wait = {
     "alwayRead":False,
     "detectMention":True,    
