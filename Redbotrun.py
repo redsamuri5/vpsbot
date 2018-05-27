@@ -25,7 +25,7 @@ else:
 
 
 cl = LINETCR.LINE()
-cl.login(token=qr().get())
+cl.login(token=qr"")
 cl.loginResult()
 print """
 ▄▄▄RED SAMURI SELFBØT▄▄▄
